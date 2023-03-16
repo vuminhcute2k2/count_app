@@ -140,75 +140,87 @@ class _MyHomePageState extends State<MyHomePage> {
            width: 500,
            height: 300,
            decoration: BoxDecoration( color: Colors.black12,borderRadius: BorderRadius.circular(16)),
-           child: Row(
-             mainAxisSize: MainAxisSize.min,
-             mainAxisAlignment: MainAxisAlignment.center,
-             children: [
-               Container(
-                 child: Column(
-                   children: [
-                      Container(
+           child: Container(
+             child: Row(
+               children: [
+                 Container(
+                   child: Column(
+                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                     mainAxisSize: MainAxisSize.min,
+                     children: [
+                        Container(
 
-                        decoration: BoxDecoration( color: Colors.cyan[100],borderRadius: BorderRadius.circular(16)),
-                        child: Text(
-                          "Intermediate",
-                          style: TextStyle(
-                            color: Colors.indigo[300],
-                            fontSize: 16,
-                            fontFamily: 'roboto',
-                            fontWeight: FontWeight.bold,
+                          decoration: BoxDecoration( color: Colors.cyan[100],borderRadius: BorderRadius.circular(16)),
+                          child: Text(
+                            "Intermediate",
+                            style: TextStyle(
+                              color: Colors.indigo[300],
+                              fontSize: 16,
+                              fontFamily: 'roboto',
+                              fontWeight: FontWeight.bold,
 
 
+                            ),
                           ),
+                        padding: EdgeInsets.all(5),
+                        margin: EdgeInsets.only(bottom: 50,top: 20),
                         ),
-                      padding: EdgeInsets.all(5),
-                      margin: EdgeInsets.only(bottom: 50,top: 20),
-                      ),
-                      Container(
-                        child: Text(
-                          "Today's",
-                          style: TextStyle(
-                            fontSize: 30,
-                            fontWeight: FontWeight.normal,
+                        Container(
+                          child: Text(
+                            "Today's",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
+                          margin: EdgeInsets.only(bottom: 10,),
                         ),
-                        margin: EdgeInsets.only(bottom: 10,),
-                      ),
-                     Container(
-                       child: Text(
-                         "challenge",
-                         style: TextStyle(
-                           fontSize: 30,
-                           fontWeight: FontWeight.normal,
+                       Container(
+                         child: Text(
+                           "challenge",
+                           style: TextStyle(
+                             fontSize: 30,
+                             fontWeight: FontWeight.normal,
+                           ),
+                         ),
+                         margin: EdgeInsets.only(bottom: 10,),
+                       ),
+                       Container(
+                         child: Text(
+                           "German meals",
+                           style: TextStyle(
+                             color: Colors.cyan[600],
+                             fontSize: 25,
+
+                           ),
                          ),
                        ),
-                       margin: EdgeInsets.only(bottom: 10,),
-                     ),
-                     Container(
-                       child: Text(
-                         "German meals",
-                         style: TextStyle(
-                           color: Colors.cyan[600],
-                           fontSize: 25,
+                       Container(
 
+                         child: Row(
+                           children: [
+                             Image.asset('assets/images/img_3.png',width: 50,),
+                             SelectableText('Take this lesson to earn a new milestone'),
+                           ],
                          ),
                        ),
-                     ),
-                   ],
-                 ),
-               ),
-               Container(
-                 //alignment: Alignment.center,
-                 child: Container(
-                   child:Row(
-                    children: [
-                      Image.asset('assets/images/img_2.png',width: 229,height: 300,),
-                    ],
+                     ],
                    ),
-
                  ),
-               ),
-             ],
+                 Container(
+                   //alignment: Alignment.center,
+                   child: Container(
+                     child:Column(
+                       mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset('assets/images/img_1.png',width:80,height: 200,),
+                      ],
+                     ),
+
+                   ),
+                 ),
+               ],
+             ),
            ),
          ),
        ),
